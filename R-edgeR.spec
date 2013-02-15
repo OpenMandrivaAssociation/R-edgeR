@@ -1,18 +1,21 @@
 %global packname  edgeR
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          2.4.3
+Version:          3.0.8
 Release:          1
 Summary:          Empirical analysis of digital gene expression data in R
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-limma 
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/edgeR_3.0.8.tar.gz
+Requires:         R-methods R-limma R-locfit
 Requires:         R-MASS R-statmod R-splines 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-limma
-BuildRequires:    R-MASS R-statmod R-splines 
+BuildRequires:    R-MASS R-statmod R-splines R-locfit
+BuildRequires:    blas-devel lapack-devel
 
 %description
 Differential expression analysis of RNA-seq and digital gene expression
@@ -40,10 +43,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/CITATION
 %doc %{rlibdir}/%{packname}/DESCRIPTION
-%doc %{rlibdir}/%{packname}/NEWS
+%doc %{rlibdir}/%{packname}/NEWS*
 %{rlibdir}/%{packname}/INDEX
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+%{rlibdir}/%{packname}/libs
