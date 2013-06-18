@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          3.0.8
-Release:          1
+Release:          2
 Summary:          Empirical analysis of digital gene expression data in R
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
