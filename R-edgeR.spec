@@ -4,13 +4,13 @@
 %define debug_package %{nil}
 
 Name:             R-%{packname}
-Version:          3.0.8
-Release:          2
+Version:          3.2.4
+Release:          1
 Summary:          Empirical analysis of digital gene expression data in R
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/edgeR_3.0.8.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/edgeR_3.2.4.tar.gz
 Requires:         R-methods R-limma R-locfit
 Requires:         R-MASS R-statmod R-splines 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-limma
@@ -51,3 +51,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
