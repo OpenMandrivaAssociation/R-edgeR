@@ -9,7 +9,7 @@ Release:          2
 Summary:          Empirical analysis of digital gene expression data in R
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/edgeR_3.0.8.tar.gz
 Requires:         R-methods R-limma R-locfit
 Requires:         R-MASS R-statmod R-splines 
